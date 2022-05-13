@@ -1,7 +1,7 @@
-FROM python
+FROM python:3
 
 WORKDIR /app
 
-COPY rng.py /app
+COPY . /app
 
 CMD [ "python", "rng.py" ]
